@@ -76,7 +76,7 @@ public class CalculadoraTrigonometrica {
 
                 argInversa = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo arcoseno desea conocer? "));
 
-                System.out.println("El arcocoseno de"+ argInversa +" (en radianes) es: "+ Math.asin(argInversa));
+                System.out.println("El arcocoseno de "+ argInversa +" (en radianes) es: "+ Math.asin(argInversa));
 
             }
 
@@ -110,7 +110,7 @@ public class CalculadoraTrigonometrica {
 
                 argInversa = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo arcotangente desea conocer? "));
 
-                System.out.println("El arcotangente de"+ argInversa +" (en radianes) es: "+ Math.atan(argInversa));
+                System.out.println("El arcotangente de "+ argInversa +" (en radianes) es: "+ Math.atan(argInversa));
 
             }
 
