@@ -40,6 +40,7 @@ public class CalculadoraTrigonometrica {
                 argInversa = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo arcocoseno desea conocer? "));
 
                 System.out.println("El arcocoseno de "+ argInversa +" (en radianes) es: "+ Math.acos(argInversa));
+
             }
             
             // Condición encargada de calcular la hiperbólica de una función coseno:
@@ -78,14 +79,46 @@ public class CalculadoraTrigonometrica {
 
             // Condición encargada de calcular la hiperbólica de una función seno:
             else {
+
                 numeroReal = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo seno hiperbólico desea conocer? "));
 
                 System.out.println("El resultado de la función seno hiperbólico de  "+ numeroReal +" es "+ Math.sinh(numeroReal));
+
             }
         }
 
         // Condiciones encargadas de la función tangente:
         else {
+
+            // Mensaje en el que el usuario introducirá el tipo de función tangente con la que desea trabajar (normal, inversa o hiperbólica):
+            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función tangente desea evaluar (normal, inversa o hiperbólica): ");
+            
+            // Condición encargada del calculo de la función coseno normal:
+            if (tipoFuncion.equals("normal")) {
+
+                angulo = Double.parseDouble(JOptionPane.showInputDialog("Introduzca el ángulo cuya tangente desea conocer: "));
+
+                System.out.println("La tangente del ángulo "+ angulo +" es "+ Math.tan(angulo));
+
+            }
+
+            // Condición encargada de calcular la inversa de una función tangente:
+            else if (tipoFuncion.equals("inversa")) {
+
+                argInversa = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo arcotangente desea conocer? "));
+
+                System.out.println("El arcotangente de"+ argInversa +" (en radianes) es: "+ Math.atan(argInversa));
+
+            }
+
+            // Condición encargada de calcular la hiperbólica de una función tangente:
+            else {
+
+                numeroReal = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuya tangente hiperbólica desea conocer? "));
+
+                System.out.println("El resultado de la función tangente hiperbólica de  "+ numeroReal +" es "+ Math.tanh(numeroReal));
+
+            }
 
         }
 
