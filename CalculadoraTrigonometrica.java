@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; // Esto nos permitirá mostrar unos cuadros de dialógo en los que el usuario podrá introducir información.
 
 public class CalculadoraTrigonometrica {
     public static void main(String[] args) {
