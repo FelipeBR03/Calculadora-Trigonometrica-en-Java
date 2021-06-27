@@ -26,7 +26,7 @@ public class CalculadoraTrigonometrica {
         if (funcion.equals("cos")) {
             
             // Mensaje en el que el usuario introducirá el tipo de función coseno con la que desea trabajar (normal, inversa o hiperbólica):
-            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función coseno desea evaluar (normal, inversa o hiperbólica): ");
+            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función coseno desea evaluar (normal, inversa o hiperbólica)? ");
             
             // Condición encargada del calculo de la función coseno normal:
             if (tipoFuncion.equals("normal")) {
@@ -60,7 +60,7 @@ public class CalculadoraTrigonometrica {
         else if (funcion.equals("sen")) {
 
             // Mensaje en el que el usuario introducirá el tipo de función seno con la que desea trabajar (normal, inversa o hiperbólica):
-            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función seno desea evaluar (normal, inversa o hiperbólica): ");
+            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función seno desea evaluar (normal, inversa o hiperbólica)? ");
 
             // Condición encargada del calculo de la función seno normal:
             if (tipoFuncion.equals("normal")) {
@@ -94,7 +94,7 @@ public class CalculadoraTrigonometrica {
         else {
 
             // Mensaje en el que el usuario introducirá el tipo de función tangente con la que desea trabajar (normal, inversa o hiperbólica):
-            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función tangente desea evaluar (normal, inversa o hiperbólica): ");
+            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función tangente desea evaluar (normal, inversa o hiperbólica)? ");
             
             // Condición encargada del calculo de la función coseno normal:
             if (tipoFuncion.equals("normal")) {
