@@ -23,9 +23,9 @@ public class CalculadoraTrigonometrica {
         if (funcion.equals("cos")) {
             
             // Mensaje en el que el usuario introducirá el tipo de función coseno con la que desea trabajar (normal, inversa o hiperbólica):
-            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función desea evaluar (normal, inversa o hiperbólica): ");
+            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función coseno desea evaluar (normal, inversa o hiperbólica): ");
             
-            // Condición encargada del calculo de la función coseno (normal):
+            // Condición encargada del calculo de la función coseno normal:
             if (tipoFuncion.equals("normal")) {
 
                 angulo = Double.parseDouble(JOptionPane.showInputDialog("Introduzca el ángulo cuyo coseno desea conocer: "));
@@ -39,7 +39,7 @@ public class CalculadoraTrigonometrica {
                 
                 argInversa = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo arcocoseno desea conocer? "));
 
-                System.out.println("El resultado (en radianes) de la evaluación anterior es: "+ Math.acos(argInversa));
+                System.out.println("El arcocoseno de "+ argInversa +" (en radianes) es: "+ Math.acos(argInversa));
             }
             
             // Condición encargada de calcular la hiperbólica de una función coseno:
@@ -48,8 +48,46 @@ public class CalculadoraTrigonometrica {
                 numeroReal = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo coseno hiperbólico desea conocer? "));
 
                 System.out.println("El resultado de la función coseno hiperbólico de  "+ numeroReal +" es "+ Math.cosh(numeroReal));
+        
+            }     
+        }
+
+        // Condiciones encargadas de la función seno:
+        else if (funcion.equals("sen")) {
+
+            // Mensaje en el que el usuario introducirá el tipo de función seno con la que desea trabajar (normal, inversa o hiperbólica):
+            tipoFuncion = JOptionPane.showInputDialog("¿Qué tipo de función seno desea evaluar (normal, inversa o hiperbólica): ");
+
+            // Condición encargada del calculo de la función seno normal:
+            if (tipoFuncion.equals("normal")) {
+
+                angulo = Double.parseDouble(JOptionPane.showInputDialog("Introduzca el ángulo cuyo seno desea conocer: "));
+
+                System.out.println("El seno del ángulo "+ angulo +" es "+ Math.sin(angulo));
 
             }
+
+            // Condición encargada de calcular la inversa de una función seno:
+            else if (tipoFuncion.equals("inversa")) {
+
+                argInversa = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo arcoseno desea conocer? "));
+
+                System.out.println("El arcocoseno de"+ argInversa +" (en radianes) es: "+ Math.asin(argInversa));
+
+            }
+
+            // Condición encargada de calcular la hiperbólica de una función seno:
+            else {
+                numeroReal = Double.parseDouble(JOptionPane.showInputDialog("¿Cuál es el valor cuyo seno hiperbólico desea conocer? "));
+
+                System.out.println("El resultado de la función seno hiperbólico de  "+ numeroReal +" es "+ Math.sinh(numeroReal));
+            }
         }
+
+        // Condiciones encargadas de la función tangente:
+        else {
+
+        }
+
     }
 }
