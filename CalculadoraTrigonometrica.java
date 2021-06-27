@@ -17,7 +17,7 @@ public class CalculadoraTrigonometrica {
         double numeroReal; // Variable que almacenará los valores que se utilizarán para las funciones hiperbólicas.
 
         // Mensaje que mostrará las intrucciones del programa:
-        JOptionPane.showMessageDialog(null, "Cuando quiera calcular el seno, coseno o tangente normal de un ángulo, por favor asegúrese de que dicho ángulo esté en radianes para el correcto funcionamiento del programa. \nEn el caso de las inversas, el resultado que obtendrá será un ángulo en radianes.", "Instrucciones", JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(null, "Cuando quiera calcular el seno, coseno o tangente normal de un ángulo, por favor, asegúrese de que dicho ángulo esté en radianes para el correcto funcionamiento del programa. \nEn el caso de las funciones trigonométricas inversas, el resultado que obtendrá será un ángulo en radianes.", "Instrucciones", JOptionPane.INFORMATION_MESSAGE);
 
         // Mensaje que le pedirá al usuario escribir la función con la que desea trabajar:
         funcion = JOptionPane.showInputDialog("Escriba la función trigonométrica que quiera calcular (sen, cos o tan): ");
